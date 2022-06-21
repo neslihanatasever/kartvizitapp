@@ -9,6 +9,8 @@ import { AboutComponent } from './components/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import {DxiColumnModule, DxoEditingModule} from "devextreme-angular/ui/nested";
+import {DxDataGridModule} from "devextreme-angular";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import {MatIconModule} from "@angular/material/icon";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    DxoEditingModule,
+    DxiColumnModule,
+    DxDataGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
