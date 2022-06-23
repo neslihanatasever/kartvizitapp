@@ -1,11 +1,31 @@
 <main>
-  <h3 class="page-title">Kartvizitler</h3>
-  <p class="page-description">
-    Bu ekranda kartvizitlerinizi yönetebilirsiniz.
-  </p>
+<div class="d-flex align-items-center">
+  <div class="flex-grow-1">
+    <h3 class="page-title">Kartvizitler</h3>
+    <p class="page-description">
+      Bu ekranda kartvizitlerinizi yönetebilirsiniz.
+    </p>
+  </div>
+  <button mat-flat-button color="primary"(click)="openAddCardModel()">Yeni Kartvizit</button>
+</div>
   <hr>
   <div class="cards">
     <div class="row">
+      <div class="col-12 col-md-4">
+        <app-card-item [card]="cardItem"></app-card-item>
+      </div>
+      <div class="col-12 col-md-4">
+        <app-card-item [card]="cardItem"></app-card-item>
+      </div>
+      <div class="col-12 col-md-4">
+        <app-card-item [card]="cardItem"></app-card-item>
+      </div>
+      <div class="col-12 col-md-4">
+        <app-card-item [card]="cardItem"></app-card-item>
+      </div>
+      <div class="col-12 col-md-4">
+        <app-card-item [card]="cardItem"></app-card-item>
+      </div>
       <div class="col-12 col-md-4">
         <app-card-item [card]="cardItem"></app-card-item>
       </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {CardModelComponent} from "./card-model/card-model.component";
 
 @Component({
   selector: 'app-cards',
@@ -15,9 +17,16 @@ export class CardsComponent implements OnInit {
     email:'info@neslihan.com.tr',
     address:'Merkez,DÜZCE'
   }
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
 
+  openAddCardModel(){
+    this.dialog.open(CardModelComponent, {
+      width: '400px'
+    })
+  }
 }
